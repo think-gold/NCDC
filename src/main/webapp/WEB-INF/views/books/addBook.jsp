@@ -1,5 +1,6 @@
 <%--<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>--%>
 <%--<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>--%>
+
 <%--<jsp:useBean id="now" class="java.util.Date"/>--%>
 <%--<%@page contentType="text/html; charset=UTF-8" %>--%>
 
@@ -12,8 +13,8 @@
 
 </head>
 <body>
+<!--Navigation-->
 <div>
-    <!--Navigation-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -26,19 +27,24 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#">Add author</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Books</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Add book</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </div>
+<!--Navigation END-->
+<h4>Add book</h4>
+
+<!--Form-->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -10,10 +10,12 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Book extends BaseEntity {
-    private String title;
+public class BookModel {
+    @Id
     private String isbn;                      // primary-key
+    private String title;
+
 
     @ManyToOne
-    private Author author;
+    private AuthorModel author;
 }

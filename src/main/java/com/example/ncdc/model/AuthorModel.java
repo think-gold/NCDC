@@ -1,8 +1,6 @@
 package com.example.ncdc.model;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,10 +10,13 @@ import java.util.Set;
 @Entity
 @Getter
 @Setter
-public class Author extends BaseEntity{
+public class AuthorModel {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String firstName;
     private String lastName;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy ="author")
-    private Set<Book> books = new HashSet<>();
+    private Set<BookModel> books = new HashSet<>();
 }

@@ -21,15 +21,14 @@
         <div class="col-6">
             <label class="form-label">Author</label>
             <!--SELECT-->
-            <select class="form-select" aria-label="Default select example">
+            <select class="form-select" name="author" aria-label="Default select example">
                 <option selected>Select Author</option>
 
                 <c:forEach items="${authorModel}" var="author">
                     <!--nie zapisuje ID autora-->
-                    <option input type="text" class="form-control" name="author">${author.lastName}</option>
+                    <option input type="text" class="form-control" >${author.lastName}</option>
 
                 </c:forEach>
-
             </select>
             <!--SELECT END-->
 

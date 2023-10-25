@@ -18,6 +18,12 @@ public class AuthorModel {
     private String firstName;
     private String lastName;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy ="author")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "author")
     private Set<BookModel> books = new HashSet<>();
+
+    @Override
+    public String toString() {
+        return
+                firstName + ", " + lastName;
+    }
 }

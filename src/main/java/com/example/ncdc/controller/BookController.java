@@ -20,7 +20,9 @@ public class BookController {
     private final AuthorService authorService;
 
     @GetMapping("/books")
-    public String getBooksList() {
+    public String getBooksList(Model model) {
+        List<BookModel> booksList = bookService.getBooksList();
+        model.addAttribute("bookModel", booksList);
         return "books/booksList";
     }
 

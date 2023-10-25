@@ -5,6 +5,8 @@ import com.example.ncdc.repository.BookRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @AllArgsConstructor
 public class BookService {
@@ -14,9 +16,8 @@ public class BookService {
         bookRepository.save(book);
     }
 
-//    public List<Book> getAllBooks() {
-//        return bookRepository.findAll();
-//    }
-
+    public List<BookModel> getBooksList() {
+        return bookRepository.findAll();
+    }
 
 }

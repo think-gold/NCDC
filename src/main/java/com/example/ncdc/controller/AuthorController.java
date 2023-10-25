@@ -23,7 +23,6 @@ public class AuthorController {
         return "authors/authorsList";
     }
 
-
     @GetMapping("/addAuthor")
     public String getAddAuthor() {
         return "authors/addAuthor";

@@ -32,13 +32,14 @@
         <tbody>
 
         <!--Komórki - pętla for each-->
+        <c:forEach items="${bookModel}" var="book">
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Thornton</td>
+            <td>${book.author}</td>
+            <td>${book.title}</td>
+            <td>${book.isbn}</td>
         </tr>
+        </c:forEach>
 
-        </tr>
         <!--koniec pętli-->
         </tbody>
     </table>

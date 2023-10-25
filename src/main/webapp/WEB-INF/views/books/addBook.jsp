@@ -16,7 +16,7 @@
 <div style="margin-top: 30px; margin-left: 30px">
 <h4>Add book</h4>
     <!--Form-->
-    <form style="margin-top: 15px">
+    <form method="post" action='<c:url value="/addBook"/>' style="margin-top: 15px">
         <div class="col-6">
             <label class="form-label">Author</label>
             <!--tabela rozwijana-->
@@ -32,16 +32,16 @@
 
         <div class="col-6">
             <label class="form-label">Title</label>
-            <input type="text" class="form-control"/>
+            <input type="text" class="form-control" name="title"/>
         </div>
 
         <div class="col-6">
             <label class="form-label">ISBN</label>
-            <input type="text" class="form-control"/>
+            <input type="text" class="form-control" name="isbn"/>
         </div>
-<!--połączyć z metodą save-->
+
         <div class="col-12" style="margin-top: 15px">
-            <button class="btn btn-primary" type="submit">Submit</button>
+            <input class="btn btn-primary" type="submit" value="Submit"></input>
         </div>
     </form>
 

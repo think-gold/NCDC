@@ -40,7 +40,7 @@
         </thead>
         <tbody>
         <!--loop For Each-->
-        <c:forEach items="${authotModel}" var="author">
+        <c:forEach items="${authorModel}" var="author">
         <tr>
             <td>${author.firstName}</td>
             <td>${author.lastName}</td>

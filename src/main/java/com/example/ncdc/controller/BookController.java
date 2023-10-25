@@ -10,15 +10,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class BookController {
     private final BookService bookService;
 
-    @GetMapping("/api/books")
+    @GetMapping("/books")
     public String getBooksList(){
         return "books/booksList";
     }
 
-    @GetMapping("/api/addBook")
+    @GetMapping("/addBook")
     public String getAddBook(){
         return "books/addBook";
     }
+
+
 
 //    @GetMapping
 //    public List<Book> getListOfBooks(){

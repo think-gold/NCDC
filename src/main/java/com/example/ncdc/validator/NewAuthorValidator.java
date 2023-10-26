@@ -4,9 +4,11 @@ import com.example.ncdc.model.AuthorModel;
 
 
 public class NewAuthorValidator {
-    public static void validate(AuthorModel newAuthor){
-        if(!newAuthor.getFirstName().matches("A.*")||!newAuthor.getLastName().matches("A.*")){
-            System.out.println("First name or Last name should start with letter A");
+    public static boolean validate(AuthorModel newAuthor) {
+        if (newAuthor.getFirstName().matches("A.*") || newAuthor.getLastName().matches("A.*")) {
+            return true;
+        } else {
+            return false;
         }
     }
 }

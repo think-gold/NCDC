@@ -39,10 +39,7 @@ public class BookController {
         return new RedirectView("/books");
     }
 
-//    @GetMapping
-//    public List<Book> getListOfBooks(){
-//       return bookService.getAllBooks();
-//    }
+
 
 
 }

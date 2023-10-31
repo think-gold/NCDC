@@ -46,6 +46,7 @@
             <td>${author.lastName}</td>
         </tr>
         </c:forEach>
+
         <!--loop END-->
         </tbody>
     </table>

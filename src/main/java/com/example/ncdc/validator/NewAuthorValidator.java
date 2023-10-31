@@ -5,10 +5,6 @@ import com.example.ncdc.model.AuthorModel;
 
 public class NewAuthorValidator {
     public static boolean validate(AuthorModel newAuthor) {
-        if (newAuthor.getFirstName().matches("A.*") || newAuthor.getLastName().matches("A.*")) {
-            return true;
-        } else {
-            return false;
-        }
+        return newAuthor.getFirstName().matches("A.*") || newAuthor.getLastName().matches("A.*");
     }
 }

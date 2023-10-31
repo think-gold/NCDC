@@ -27,7 +27,11 @@
             <label class="form-label">Last Name:</label>
             <input type="text" class="form-control" name="lastName" placeholder="Last Name"/>
         </div>
-
+        <div>
+            <p style="margin-top: 15px; color: red" >
+                <c:out value="${validationError}"></c:out>
+            </p>
+        </div>
         <div class="col-12" style="margin-top: 15px">
             <input class="btn btn-primary" type="submit" value="Submit"></input>
         </div>
